@@ -1,35 +1,72 @@
 #navi{
-    height: 127px;
+    
     background-color: #5885AF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 70px;
+    grid-template-columns: max-content 1fr max-content;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    
 }
 #Logo{
-    max-width: 255px;; 
+    color: white;
+    margin-top: 6px;
+    margin-bottom: 8px;
+    margin-left: 25px;
 }
-
 #Logo h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
     font-size: 48px;
-    color:white;
-    font-family: 'Roboto', sans-serif;
-    text-align: left;
-    margin-left: 10px;
 }
 
-#header-left ul {
+#navi-list{
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    /* grid-template-rows: 70px; */
+    grid-gap: 6%;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    margin-left: 22%;/* hier was ändern */
     list-style: none;
-    font-size: 20px;
-}
-
-.list-item {
-    padding: 20px 20px 20px 20px;
-    display: inline;
     
 }
-
-.list-item a {
-    text-decoration: none;
+.list-item{
+    padding: 5px;
+    border-radius: 10px;
+}
+#navi-list a{
+    
     color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-decoration: none;
+    
+}
+.list-item:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+} 
+
+#navi-list a span{
+    vertical-align: middle;
+    margin-right: -3.5%;
+    height: 30px;
+    width: 30px;
+    font-size: 25px;
+}
+
+
+#icons{
+    display: inline;
+    float: right;
+    margin-top:20px ;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    color: white;
+}
+#icons span{
+    font-size: 30px;
+    height: 30px;
+    width: 30px;
 }
 
