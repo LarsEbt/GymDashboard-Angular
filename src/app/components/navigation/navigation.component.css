@@ -1,0 +1,35 @@
+#navi{
+    height: 127px;
+    background-color: #5885AF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#Logo{
+    max-width: 255px;; 
+}
+
+#Logo h1{
+    font-size: 48px;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    margin-left: 10px;
+}
+
+#header-left ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+.list-item {
+    padding: 20px 20px 20px 20px;
+    display: inline;
+    
+}
+
+.list-item a {
+    text-decoration: none;
+    color: white;
+}
+
