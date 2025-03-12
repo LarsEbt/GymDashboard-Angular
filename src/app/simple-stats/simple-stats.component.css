@@ -1,0 +1,14 @@
+.simple-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 115px;
+    column-gap: 3%;
+    margin-left: 25px;
+    margin-top: 22px;
+    margin-right: 25px;
+}
+.simple-stats_item{
+    background-color: #41729F;
+    border-radius: 5.25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    
+}
