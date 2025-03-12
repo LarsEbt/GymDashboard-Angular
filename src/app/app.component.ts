@@ -1,15 +1,31 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+
+import { BaseChartDirective } from 'ng2-charts';
+
+// Components
+import {DiagrammsComponent} from './diagramms/diagramms.component';
 import { NavigationComponent } from './components/navigation/navigation.component'; 
 import {SimpleStatsComponent} from './simple-stats/simple-stats.component';
+import { DiagrammDataService } from './diagramm-data.service';
 
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet , NavigationComponent, SimpleStatsComponent],
+  standalone: true,
+  imports:
+   [RouterOutlet , 
+    NavigationComponent,
+    SimpleStatsComponent,
+    DiagrammsComponent,
+    BaseChartDirective ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  providers: [DiagrammDataService],
+  styleUrl: './app.component.css',
+  template: `<ejs-chart id='chart-container'></ejs-chart>`
 
 })
 export class AppComponent {
