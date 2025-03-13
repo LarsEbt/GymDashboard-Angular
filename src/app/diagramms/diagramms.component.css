@@ -1,0 +1,17 @@
+#Total-Diagrams{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 615px;
+    column-gap: 2%;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 22px;
+}
+.diagram{
+    background-color: var(--elements-bg);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+    border-radius: 5.25px;
+    border-color:var(--akzent1);
+    border-width: 2.5px;
+    border-style: solid;
+}
