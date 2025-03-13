@@ -8,6 +8,13 @@ html, body{
     height: 100%;
     height: 100%;
     /* font-family: "Roboto", sans-serif; */
+    background-color: var(--main-bg);
 }
 
-  
+  :root{
+    --main-bg: #F5F5F5;
+    --header-footer:#293241;
+    --elements-bg: #3D5A80;
+    --akzent1:#EE6C4D;
+    --white: #ffffff;
+  }

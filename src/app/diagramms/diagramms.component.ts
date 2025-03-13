@@ -52,29 +52,29 @@ export class DiagrammsComponent implements OnInit {
         },
       },
     },
-    plugins: {
-      legend: { display: true },
-      annotation: {
-        annotations: [
-          {
-            type: 'line',
-            scaleID: 'x',
-            value: 'March',
-            borderColor: 'orange',
-            borderWidth: 2,
-            label: {
-              display: true,
-              position: 'center',
-              color: 'orange',
-              content: 'LineAnno',
-              font: {
-                weight: 'bold',
-              },
-            },
-          },
-        ],
-      },
-    },
+    // plugins: {
+    //   legend: { display: true },
+    //   annotation: {
+    //     annotations: [
+    //       {
+    //         type: 'line',
+    //         scaleID: 'x',
+    //         value: 'March',
+    //         borderColor: 'orange',
+    //         borderWidth: 2,
+    //         label: {
+    //           display: true,
+    //           position: 'center',
+    //           color: 'orange',
+    //           content: 'LineAnno',
+    //           font: {
+    //             weight: 'bold',
+    //           },
+    //         },
+    //       },
+    //     ],
+    //   },
+    // },
   };
 
   constructor() {}
