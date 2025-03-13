@@ -10,6 +10,7 @@ import {DiagrammsComponent} from './diagramms/diagramms.component';
 import { NavigationComponent } from './components/navigation/navigation.component'; 
 import {SimpleStatsComponent} from './simple-stats/simple-stats.component';
 import { DiagrammDataService } from './diagramm-data.service';
+import {FooterComponent} from './footer/footer.component';
 
 
 
@@ -21,7 +22,8 @@ import { DiagrammDataService } from './diagramm-data.service';
     NavigationComponent,
     SimpleStatsComponent,
     DiagrammsComponent,
-    BaseChartDirective ],
+    BaseChartDirective,
+    FooterComponent ],
   templateUrl: './app.component.html',
   providers: [DiagrammDataService],
   styleUrl: './app.component.css',
