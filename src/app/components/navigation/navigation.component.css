@@ -20,15 +20,15 @@
 
 #navi-list{
     display: grid;
-    grid-template-columns: max-content max-content max-content;
-    /* grid-template-rows: 70px; */
-    grid-gap: 6%;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 2vw;
     margin-top: 16px;
     margin-bottom: 24px;
-    margin-left: 22%;/* hier was ändern */
+    margin-left: 2vw;
     list-style: none;
-    
 }
+
+
 .list-item{
     padding: 5px;
     border-radius: 10px;
@@ -42,9 +42,7 @@
     text-decoration: none;
     
 }
-.list-item:hover{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-} 
+
 
 #navi-list a span{
     vertical-align: middle;
@@ -68,4 +66,114 @@
     height: 30px;
     width: 30px;
 }
+.dropdown{
+    display: none;
+}
+#dropdown-menu{
+    display: none;
+}
 
+
+@media (max-width: 800px) {
+    #navi{
+        grid-template-columns: max-content 1fr;
+    }
+    #Logo h1 {
+        font-size: 40px;
+    }
+    #header-right {
+        display: none;
+    }
+    #header-left {
+        display: none;
+    }
+    #icons {
+        margin-right: 10px;
+        display: none;
+    }
+    /**Dropdown Menu */
+    /* Style The Dropdown Button */
+
+.dropbtn {
+    background-color: var(--header-footer);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    padding-top: 20px;
+    font-size: 30px;
+    /* margin-right: 25px; */
+}
+  
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 25px; /* Added margin to the right */
+}
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%; /* Position the dropdown content below the button */
+    right: 0; /* Align the dropdown content to the right */
+}
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    /* background-color: #3e8e41; */
+}
+}
+@media (max-width: 480px) {
+    #Logo h1 {
+        margin-top: 10px;
+        font-size: 30px;
+    }
+    #navi-list {
+        grid-template-columns: 1fr;
+        margin-left: 5%;
+    }
+    #icons {
+        margin-right: 5px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #navi-list {
+        
+        justify-content: center;
+        grid-template-columns: auto auto auto;
+        /* column-gap: 40px; */
+    }
+}
+@media screen and (min-width: 2560px) {
+    #navi-list {
+        column-gap: 20px;
+        justify-content: center;
+    }
+}
